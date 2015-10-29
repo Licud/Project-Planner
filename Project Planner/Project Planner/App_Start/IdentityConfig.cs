@@ -11,6 +11,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using Project_Planner.Models;
+using Data_Access_Layer.Models;
+using Data_Access_Layer;
 
 namespace Project_Planner
 {
