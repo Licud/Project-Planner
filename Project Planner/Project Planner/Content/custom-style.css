@@ -22,3 +22,10 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.project-boxes {
+    color: white;
+    background-color: burlywood;
+    margin-top: 10px;
+    border: 1px solid black;
+}
