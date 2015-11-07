@@ -1,7 +1,7 @@
 ﻿
 namespace Data_Access_Layer.Models
 {
-    class Objective
+    public class Objective
     {
 
         public int ObjectiveId { get; set; }

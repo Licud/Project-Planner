@@ -1,9 +1,8 @@
-﻿using System.Data.Entity;
-using System.Security.Claims;
+﻿using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-
+using System;
 
 namespace Data_Access_Layer.Models
 {
@@ -17,5 +16,11 @@ namespace Data_Access_Layer.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public string firstname { get; set; }
+
+        public string lastname { get; set; }
+
+        public DateTime Created { get; set; }
     }
 }

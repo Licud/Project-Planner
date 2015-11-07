@@ -4,7 +4,7 @@ using System;
 
 namespace Data_Access_Layer.Unit_Of_Work
 {
-    class UnitOfWork : IDisposable
+    public class UnitOfWork : IDisposable
     {
         private ApplicationDbContext context = new ApplicationDbContext();
         private GenericRepository<Project> projectRepository;

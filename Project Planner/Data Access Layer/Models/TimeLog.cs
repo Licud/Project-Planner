@@ -2,7 +2,7 @@
 
 namespace Data_Access_Layer.Models
 {
-    class TimeLog
+    public class TimeLog
     {
 
         public int TimeLogId { get; set; }

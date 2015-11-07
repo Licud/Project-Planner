@@ -1,16 +1,19 @@
-﻿using System;
+﻿using System.Web.Mvc;
+using Project_Planner.Models;
+using Data_Access_Layer.Unit_Of_Work;
+using Data_Access_Layer.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
 
 namespace Project_Planner.Controllers
 {
     public class HomeController : Controller
     {
+        private UnitOfWork unitOfWork = new UnitOfWork();
+        
+
         public ActionResult Index()
         {
-            return View();
+            return View(new HomeViewModel() { Project = unitOfWork.ProjectRepository.GetAllRecords()});
         }
 
         public ActionResult About()

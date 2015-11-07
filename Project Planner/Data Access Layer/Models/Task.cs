@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Data_Access_Layer.Models
 {
-    class Task
+    public class Task
     {
 
         public int TaskId { get; set; }

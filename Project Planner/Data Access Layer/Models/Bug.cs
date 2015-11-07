@@ -2,7 +2,7 @@
 
 namespace Data_Access_Layer.Models
 {
-    class Bug
+    public class Bug
     {
 
         public int BugId { get; set; }

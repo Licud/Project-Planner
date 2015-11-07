@@ -109,7 +109,7 @@ namespace Project_Planner.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { firstname = model.Firstname, lastname = model.Lastname, Created = DateTime.Now, UserName = model.Firstname + ' ' + model.Lastname, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

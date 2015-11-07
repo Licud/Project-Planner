@@ -1,7 +1,7 @@
 ﻿
 namespace Data_Access_Layer.Models
 {
-    class Technology
+    public class Technology
     {
 
         public int TechnologyId { get; set; }

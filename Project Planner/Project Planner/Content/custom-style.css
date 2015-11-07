@@ -16,16 +16,44 @@
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.project-boxes {
+    background-color: #d3d3d3;
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 1.5em;
 }
 
-.project-boxes {
-    color: white;
-    background-color: burlywood;
-    margin-top: 10px;
+.project-boxes:first-child p {
+
+    margin: 10px 0px 10px 25px;
+
+}
+
+#index-row{
+    margin-top: 30px;
+}
+
+#main-body-content{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.form-box {
+    width:auto;
+    background-color: #979797;
     border: 1px solid black;
+    border-top: none;
+    margin: 0px 10px 0px 10px;
+}
+
+.add-top-padding-20{
+    padding-top: 20px;
+}
+
+.do-not-display {
+    display: none;
+}
+
+.do-display{
+    display: block;
 }

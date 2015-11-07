@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace Data_Access_Layer.Repositories
 {
-    class GenericRepository<TEntity> where TEntity : class
+    public class GenericRepository<TEntity> where TEntity : class
     {
 
         internal ApplicationDbContext context;

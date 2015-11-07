@@ -1,7 +1,7 @@
 ﻿
 namespace Data_Access_Layer.Models
 {
-    class Features
+    public class Features
     {
 
         public int FeaturesId { get; set; }
