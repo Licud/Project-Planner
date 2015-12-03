@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Data_Access_Layer.Models
 {
+    [Serializable]
     public class Project
     {
 
@@ -25,12 +26,15 @@ namespace Data_Access_Layer.Models
         public string strCurrentVersion { get; set; }
 
         [Display(Name = "Created Date")]
+        [DataType(DataType.Date)]
         public DateTime dtmCreatedDate { get; set; }
 
         [Display(Name = "Finished Date")]
+        [DataType(DataType.Date)]
         public DateTime dtmFinishedDate { get; set; }
 
         [Display(Name = "Projected Finished Date")]
+        [DataType(DataType.Date)]
         public DateTime dtmProjectedFinishedDate { get; set; }
 
 

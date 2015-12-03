@@ -17,18 +17,13 @@
 
 </div>
 
-@if (Model.Project.Count() == 0)
-{
-    <div class="row"><div class="col-md-6">
-
-        <div id="add-project-box" class="col-md-12 project-boxes">
-
-            <p>Add a Project</p>
-
+<div class="row">  
+    <div class="col-md-12">
+        <div id="toggle-box-p" class="col-md-12 new-project-box toggle-box">
+            <p>Add A Project!</p>
         </div>
 
-
-        <div id="testMeNow" class="col-md-12 form-box add-top-padding-20 do-not-display">
+        <div id="toggle-box-p-child" class="col-md-12 form-box add-top-padding-20 do-not-display">
 
             @using (Html.BeginForm(null, null, FormMethod.Post, new { @id = "create-project-form" } )) {
 
@@ -57,19 +52,34 @@
                 </div>
 
                 <div class="form-group">
-                    <input id="create-project-button" type="submit" value="Create" class="btn btn-primary" />
+                    <input id="create-project-button" type="button" value="Create" class="btn btn-primary" />
                 </div>
-
             }
-
         </div>
+    </div>
+</div>
 
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>Ongoing Projects</h1>
+        <hr />
+    </div>
+</div>
+
+<div class="row">
+
+    <div id="ongoing-projects-container" class="col-md-6">
+
+        <div class="col-md-12 project-boxes toggle-box show-project-task">
+            <p>Project 1 <span class="project-details">Details</span></p>
+        </div>
+        
+    </div>
+
+    <div id="selected-items-container" class="col-md-6">
 
     </div>
 
 </div>
 
-}
-else {
-    <p>Hello</p>
-}

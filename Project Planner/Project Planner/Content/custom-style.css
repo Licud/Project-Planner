@@ -16,17 +16,19 @@
     white-space: normal;
 }
 
-.project-boxes {
+.new-project-box, .project-boxes {
     background-color: #d3d3d3;
     border: 1px solid black;
     border-radius: 15px;
     font-size: 1.5em;
 }
 
-.project-boxes:first-child p {
-
+.new-project-box p, .project-boxes p {
     margin: 10px 0px 10px 25px;
+}
 
+.project-boxes {
+    margin-bottom: 15px;
 }
 
 #index-row{
@@ -52,8 +54,4 @@
 
 .do-not-display {
     display: none;
-}
-
-.do-display{
-    display: block;
 }
